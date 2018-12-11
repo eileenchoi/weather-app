@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather app</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Raleway:300,400,700,700i,800" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <script src="https://use.fontawesome.com/e1103240b9.js"></script>
+</head>
+<body
+ <header>
+     <div class="wrapper"> 
+         <div class="inputContainer">
+            <img src="" alt="current weather icon" id = "weatherIcon">
+            
+            <div class="name">
+                <form id="formName" action="">
+                    <h2>Hi! What is your name?</h2>
+                    
+                    <label for="name"></label>
+                    <input type="text" id="name" value="" placeholder="Your Name">
+                    
+                    <label for="submit"></label>
+                    <input type="submit" class="submit">
+                </form>
+            </div> <!-- name -->
+            <div class="location">
+                <h3>Location</h3>
+                <p class="displayLocation"></p>
+            </div><!-- displayLocation -->
+        </div>
+    </div> <!-- wrapper -->
+ </header>
+
+<div class="locationSearch">
+    <div class="wrapper">
+        <form id="locInput" action="submit">
+            <label for="locInput"></label>
+            <input type="text" name="location" id="location" placeholder="Location">
+
+            <label for="province"></label>
+            <input id="province" type="text" placeholder="province or state">
+     
+            <label for="submit"></label>
+            <input type="submit">  
+         </form>
+    </div> <!-- wrapper -->
+</div><!-- locationSearch -->
+
+<div class="resetButton">
+    <button id="reset">
+        <p>home</p>
+    </button>
+
+</div>
+
+<div id="displayResponse">
+    <div class="wrapper">
+        <p class="display"></p>
+        <p class="forecastDisplay"></p>
+    </div><!-- wrapper -->
+</div><!-- displayResponse -->
+
+<!-- *************social**************** -->
+<div class="social">
+    <div class="wrapper">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/eileenchoi_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div><!-- wrapper -->
+</div><!-- social -->
+ <footer>
+     <p>Hi! If you'd like to help make this app better, contact the developer!</p>
+     <p>&#9400;Eileen Choi</p>
+ </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    
+<script src="script.js"></script>
+</body>
+</html>
